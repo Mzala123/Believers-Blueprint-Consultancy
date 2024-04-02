@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: "Montserrat";
+     src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url(Syne/Syne-VariableFont_wght.ttf); 
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url();
+}
+
+html {
+    font-family: 'poppins';
+}
+
+body{
+    background-color: white;
+    color: #191919;
+}
+
+header{
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border-bottom:1px solid gray; */
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+}
+
+
+header > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    width: 100%;
+}
+
+header >div:nth-child(1) a .logo{
+    height:50px;
+    display: flex;
+    align-self: center;
+}
+
+header > div:nth-child(2){
+    background-color: white;
+    gap: 30px;
+    position: absolute;
+    top: 8vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 20px ;
+    /* box-shadow: 2px 0 10px hsla(0,0%,39.2%,.3); */
+    z-index: 10px;
+}
+
+.nav_items a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Syne";
+    /* font-weight: bold; */
+}
+
+.nav_items a:hover{
+    color: #0770b9;
+}
+
+#toggle_open{
+    cursor: pointer;
+}
+
+
+
+.open_menu {
+    /* right: 0; */
+    left: 0;
+    transition: all ease-out .2s;  
+} 
+ 
+.close_menu {
+    /* right: -330px; */
+    /* left: 100%; */
+    left: -100%;
+} 
+
+.main_content{
+    position: relative;
+    top: 8vh;
+    padding: 20px;
+    z-index: -1;
+}
+.intro{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intro > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro > div:nth-child(1) p:nth-of-type(1){
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.intro > div:nth-child(1) h2{
+    font-size: 30px;
+}
+
+
+.intro > div:nth-child(1) p:nth-of-type(2){
+    /* font-family: "Montserrat"; */
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+}
+
+.intro > div:nth-child(1) button{
+    width: 150px;
+    padding: 20px 0 20px;
+  
+    background-color: #00aeef;
+    border: none;
+    font-family: "Montserrat";
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.intro > div:nth-child(1) button:hover{
+     cursor: pointer;
+     background-color: #0770b9;
+}
+
+
+
+.intro_image{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.intro_image > div{
+    border: 1px solid;
+    grid-template-rows: 2fr;
+}
+
+
+@media screen and (min-width:500px) {
+   
+
+}
+
+
+@media screen and (min-width:640px) {
+
+    
+}
+
+
+@media screen and (min-width:768px) {
+    header{
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 0 40px 0 40px;
+     }
+     
+     
+     header > div:nth-child(1){
+         width: auto;
+     }
+     
+     header >div:nth-child(1) a .logo{
+         height:50px;
+         display: flex;
+         align-self: center;
+     }
+     
+     header > div:nth-child(2){
+         background-color: transparent;
+         gap: 20px;
+         position: relative;
+         top: 0;
+         right: 0;
+         display: flex;
+         flex-direction: row;
+         height: auto;
+         width: auto;
+         padding: 20px;
+         box-shadow: none;
+     }
+
+     #toggle_open{
+        cursor: pointer;
+        display: none;
+    }
+
+    /* .open_menu {
+        /* right: 0; 
+        left: 0;
+        transition: all ease-out .2s;  
+    }  */
+     
+    .close_menu {
+        /* right: -330px; */
+        /* left: 100%; */
+        left: 0;
+    } 
+     
+}
+
+
+@media screen and (min-width:1020px) {
+
+}
+
+
+@media screen and (min-width:1200px) {
+
+}
