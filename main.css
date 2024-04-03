@@ -23,8 +23,9 @@
 }
 
 html {
-    font-family: 'poppins';
+    font-family: 'Montserrat';
     color: #191919;
+  
 }
 
 body{
@@ -81,8 +82,8 @@ header > div:nth-child(2){
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-family: "Syne";
-    
+    font-family: "Montserrat";
+    font-weight: 500;
     /* font-weight: bold; */
 }
 
@@ -126,17 +127,18 @@ header > div:nth-child(2){
 }
 
 .info{
-  
+   
 }
 
 .info > div:nth-child(1){
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
+    align-self: center;
 }
 
 .info > div:nth-child(1) p:first-of-type{
-    font-family: "Syne";
+    /* font-family: "Syne"; */
     text-transform: uppercase;
 }
 
@@ -164,7 +166,7 @@ header > div:nth-child(2){
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 
@@ -228,6 +230,7 @@ main >div:nth-child(1){
     border: 1px solid #b3e0fa;
     background-color: #ecf7fe;
     padding: 16px;
+    font-weight: 500;
 
 }
 
@@ -375,7 +378,8 @@ footer >  div:nth-child(2) > .icon{
      }
 
      .nav_items a{
-        font-size: 16px;
+        font-size: 15px;
+        
     }
 
      #toggle_open{
@@ -419,16 +423,11 @@ footer >  div:nth-child(2) > .icon{
         flex: 1; 
      }
 
-    
-    
-    .info > div:nth-child(1) h1{
-        font-size: 36px;
-    }
+
     
     .info > div:nth-child(1) p:last-of-type{
-        font-size: 16px;
-    }
-
+        font-size: 18px;
+    }    
   
     .services{
         grid-template-columns: 1fr 1fr 1fr;
@@ -454,7 +453,7 @@ footer >  div:nth-child(2) > .icon{
      }
 
      .info > div:nth-child(1) h1{
-        font-size: 40px;
+        font-size: 42px;
     }
     
     .info > div:nth-child(1) p:last-of-type{
