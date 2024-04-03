@@ -84,11 +84,14 @@ header > div:nth-child(2){
     font-size: 20px;
     font-family: "Montserrat";
     font-weight: 500;
-    /* font-weight: bold; */
+    transition: all 0.5s ease-out;
+    padding: 8px 16px;
 }
 
-.nav_items a:hover{
-    color: #0770b9;
+.nav_items a:hover, .nav_items a:focus{
+    background-color: #00aeef;
+    color: white;
+
 }
 
 #toggle_open{
@@ -138,8 +141,9 @@ header > div:nth-child(2){
 }
 
 .info > div:nth-child(1) p:first-of-type{
-    /* font-family: "Syne"; */
+    font-size: 14px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .info > div:nth-child(1) h2{
@@ -167,6 +171,7 @@ header > div:nth-child(2){
     align-items: center;
     gap: 10px;
     margin-top: 24px;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -183,11 +188,13 @@ header > div:nth-child(2){
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: all 0.5s ease-out;
 }
 
-.get_touch_btn:hover, .header_btn:hover{
+.get_touch_btn:hover, .header_btn:hover, .header_btn:focus, .get_touch_btn:focus{
   background-color: #0770b9;
   cursor: pointer;
+  color: whitesmoke;
 }
 
 
