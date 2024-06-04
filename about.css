@@ -1,0 +1,271 @@
+.content{
+    position: relative;
+    top: 10vh;
+    z-index: -1;
+}
+
+.purpose{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.purpose > h1{
+  font-size:23px;
+  margin-bottom: 16px;
+}
+
+.purpose_categories{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.mission, .vision{
+    padding: 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mission{
+    border-top: #00aeef solid 1px;
+    border-bottom: #00aeef solid 1px;
+}
+.vision{
+    border-bottom: #00aeef solid 1px;
+}
+
+.mission h2, .vision h2{
+    font-size: 15px;
+}
+
+.mission p, .vision p{
+    font-family: "poppinsLight";
+    font-size: 13px;
+}
+
+
+.core_values_wrapper_bg{
+    background-color: #0770b9;
+    padding: 20px;
+}
+
+.core_values{
+    color: white;
+}
+.core_values h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+
+.core_values_list{
+    display: grid;
+}
+
+.core_values_items:nth-child(1){
+   padding: 20px 0;
+   border-top: 0.5px dashed white;
+   border-bottom: 0.5px dashed white;
+}
+
+.core_values_items{
+    padding: 20px 0;
+    border-bottom: 0.5px dashed white;
+ }
+
+.core_values_items h2{
+    font-size: 15px;
+}
+
+.core_values_items p{
+    font-size: 12px;
+    font-family: "poppinsLight";
+}
+
+
+.impact_wrapper{
+    padding: 20px;
+}
+
+.impact{
+    background-color: #F2F2F2;
+    border-left: 1px solid #00aeef;
+    padding: 30px;
+    font-family: "poppinsLight";
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+
+.impact > div > p{
+    font-size: 13px;
+}
+
+.impact p{
+    font-size: 13px;
+}
+
+@media screen and (min-width:568px) {
+
+}
+
+@media screen and (min-width:640px) {
+    .core_values_list{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .core_values_items:nth-child(2) {
+        padding: 20px 0;
+        border-top: 0.5px dashed white;
+     }
+    
+}
+
+@media screen and (min-width:768px) {
+   .purpose_categories{
+       border-left: 6px solid #00aeef;
+       padding-left: 50px;
+   }
+
+   .purpose > h1{
+    font-size:33px;
+    }
+
+   .mission, .vision{
+       border: none;
+   }
+
+   .mission h2, .vision h2{
+    font-size: 18px;
+    }
+
+    .core_values_wrapper_bg{
+        padding: 40px 20px;
+    }
+
+    .core_values h1{
+       font-size: 33px;
+    }
+
+    .core_values_items h2{
+        font-size: 16px;
+    }
+    
+    .core_values_items p{
+        font-size: 13px;
+        font-family: "poppinsLight";
+    }
+
+    .impact{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .impact div{
+       flex: 1.5;
+    }
+
+    .impact p{
+        flex: 2;
+    }
+
+    .impact > div > p{
+        font-size: 15px;
+    }
+    
+    .impact > div > h2{
+      font-size: 33px;
+    }
+
+    .impact p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+   .purpose{
+    margin:40px auto;
+    width: 90%;
+    margin-bottom: 20px;
+   }
+
+   .mission p, .vision p{
+      font-size: 14px;
+   }
+
+   .core_values{
+    margin: auto;
+    width: 90%;
+   }
+
+   .core_values_list{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    }
+
+    .core_values_items:nth-child(3) {
+        padding: 20px 0;
+        border-top: 0.5px dashed white;
+     }
+     .core_values_items h2{
+        font-size: 18px;
+    }
+
+
+    .impact_wrapper{
+        margin: 40px auto;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+   .purpose{
+    width: 80%;
+   }
+
+   .purpose > h1{
+    font-size:46px;
+    }
+
+   .mission h2, .vision h2{
+    font-size: 21px;
+    }
+
+    .mission p, .vision p{
+        font-size: 14px;
+     }
+
+     .core_values{
+        width: 80%;
+    }
+
+    .core_values_wrapper_bg{
+        padding: 60px 20px;
+    }
+
+    .core_values h1{
+        font-size: 46px;
+     }
+
+     .impact_wrapper{
+        width: 80%;
+    }
+ 
+    .impact > div > p{
+        font-size: 17px;
+    }
+    
+    .impact > div > h2{
+      font-size: 46px;
+    }
+
+    .impact p{
+        font-size: 17px;
+    }
+
+}

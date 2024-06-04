@@ -2,7 +2,7 @@
 const toggle_open = document.getElementById("toggle_open")
 const toggle_close = document.getElementById("toggle_close")
 
-const nav_items =  document.querySelector("header > .nav_items");
+const nav_items =  document.querySelector(".header_wrapper > .nav_items");
 
 
 const open_menu_handler = ()=>{
