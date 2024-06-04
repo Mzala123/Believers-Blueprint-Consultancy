@@ -6,7 +6,7 @@
 
 .purpose{
     padding: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .purpose > h1{
@@ -48,6 +48,7 @@
 .core_values_wrapper_bg{
     background-color: #0770b9;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .core_values{
@@ -86,6 +87,7 @@
 
 .impact_wrapper{
     padding: 20px;
+    margin-top: 40px;
 }
 
 .impact{
@@ -144,6 +146,7 @@
 
     .core_values_wrapper_bg{
         padding: 40px 20px;
+
     }
 
     .core_values h1{
