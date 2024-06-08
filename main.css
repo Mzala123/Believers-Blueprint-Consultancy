@@ -318,9 +318,13 @@ main >div:nth-child(1){
     font-family: "poppinsLight";
 }
 
-/* .service_content div svg{
-    color: #00aeef;
-} */
+.service_content div p{
+   flex: 10;
+}
+
+.service_content div svg{
+   flex: 1;
+}
 
 /* End of tab services */
 
