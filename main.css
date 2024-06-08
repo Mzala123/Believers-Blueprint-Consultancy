@@ -238,27 +238,92 @@ main >div:nth-child(1){
     background-color: #00aeef;
 }
 
-.services{
-    margin-top: 80px;
-    display: grid;
+
+/* Tab services */
+
+ 
+.tab_box{
+    margin: 30px 0;
+    display: flex;
     gap: 20px;
-    color: #00aeef;
+    border-bottom: #00aeef 1px solid;
+    position: relative;
 }
 
-.services > div{
-    border: #b3e0fa solid 1px;
-    border-left: 6px solid #00aeef;
-    /* border-right: 6px solid #00aeef; */
-    /* border-left: 1px solid #b3e0fa; */
-    /* background-color: #ecf7fe; */
-    padding: 16px;
+.tab_box .tab_btn{
+     padding: 10px;
+     border: none;
+     background: white;
+     cursor: pointer;
+     font-family: "poppins";
+     font-size: 14px;
+}
+
+.tab_box .tab_btn.active_tab{
+     color: #00aeef;
+     font-weight: bold;
+}
+
+.line{
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 90px;
+    height: 5px;
+    background-color: #00aeef;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+
+.services_box{
+
+}
+
+.services_box .service_content{
+     display: none;
+     animation:moving .5s ease;
+}
+
+@keyframes moving {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.services_box .service_content.active_content{
+    display: grid;
+}
+
+.service_content{
+    display: grid;
+    gap: 20px;
+}
+
+.service_content div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #eaf7fb;
+    border-left: #00aeef solid 1px;
+    border-right: #00aeef solid 1px;
+    /* border-radius: 4px; */
+    font-size: 14px;
     font-family: "poppinsLight";
 }
 
+/* .service_content div svg{
+    color: #00aeef;
+} */
 
-.services > div p{
-    color: #191919;
-}
+/* End of tab services */
 
 footer{
    background-color: #0770b9;
@@ -336,6 +401,14 @@ footer{
     height: 30px;
 }
 
+/* .footer_social >div a:hover{
+    background-color: white;
+}
+
+.footer_social >div a svg:hover{
+    color: #0770b9;
+} */
+
 .footer_contact{
     font-family: "poppinsLight";
     display: flex;
@@ -373,9 +446,15 @@ footer{
 @media screen and (min-width:568px) {
    
 
-    .services{
+    .service_content{
         grid-template-columns: 1fr 1fr;
     }
+
+     
+    .tab_box{
+        overflow: none;
+    }
+
 
  
 }
@@ -388,8 +467,6 @@ footer{
         gap: 20px;
     }
 
-
-    
 
     .info > div:nth-child(1) p:first-of-type{
        
@@ -501,15 +578,12 @@ footer{
      }
 
 
-/*     
-    .info > div:nth-child(1) p:last-of-type{
-        font-size: 18px;
-    }     */
+     /* .tab_box .tab_btn{
+        font-size: 16px;
+     }
+   */
   
-    .services{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
+   
      
 }
 
@@ -540,6 +614,9 @@ footer{
       grid-template-columns: 1.5fr 1fr 1fr;
     }
 
+    .service_content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }
 
