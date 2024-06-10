@@ -20,26 +20,33 @@
     flex-direction: column;
 }
 
-.mission, .vision{
+
+.mission, .vision, .purpose_mini{
     padding: 10px 0 10px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.mission{
+.purpose_mini{
     border-top: #00aeef solid 1px;
     border-bottom: #00aeef solid 1px;
 }
+
+.mission{
+    /* border-top: #00aeef solid 1px; */
+    border-bottom: #00aeef solid 1px;
+}
+
 .vision{
     border-bottom: #00aeef solid 1px;
 }
 
-.mission h2, .vision h2{
+.mission h2, .vision h2, .purpose_mini h2{
     font-size: 15px;
 }
 
-.mission p, .vision p{
+.mission p, .vision p, .purpose_mini p{
     font-family: "poppinsLight";
     font-size: 13px;
 }
@@ -109,6 +116,12 @@
     font-size: 13px;
 }
 
+.impact .target ul{
+    /* padding: 16px; */
+    margin: 16px 0;
+    font-size: 13px;
+}
+
 @media screen and (min-width:568px) {
 
 }
@@ -136,11 +149,11 @@
     font-size:33px;
     }
 
-   .mission, .vision{
+   .mission, .vision, .purpose_mini{
        border: none;
    }
 
-   .mission h2, .vision h2{
+   .mission h2, .vision h2, .purpose_mini h2{
     font-size: 18px;
     }
 
@@ -168,7 +181,7 @@
     }
 
     .impact div{
-       flex: 1.5;
+       flex: 1;
     }
 
     .impact p{
@@ -187,6 +200,18 @@
         font-size: 15px;
     }
 
+    .impact div{
+        flex: 1;
+    }
+    .impact .target{
+        flex: 2;
+    }
+    .impact .target ul{
+        /* padding: 16px; */
+        margin: 16px 0;
+        font-size: 15px;
+    }
+
 
 }
 
@@ -197,7 +222,7 @@
     margin-bottom: 20px;
    }
 
-   .mission p, .vision p{
+   .mission p, .vision p, .purpose_mini p{
       font-size: 14px;
    }
 
@@ -235,7 +260,7 @@
     font-size:46px;
     }
 
-   .mission h2, .vision h2{
+   .mission h2, .vision h2, .purpose_mini h2{
     font-size: 21px;
     }
 
@@ -260,7 +285,7 @@
     }
  
     .impact > div > p{
-        font-size: 17px;
+        font-size: 16px;
     }
     
     .impact > div > h2{
@@ -268,7 +293,11 @@
     }
 
     .impact p{
-        font-size: 17px;
+        font-size: 16px;
+    }
+
+    .impact .target ul{
+        font-size: 16px;
     }
 
 }

@@ -95,11 +95,12 @@
 
 @media screen and (min-width:1024px) {
 
-    .contact_wrapper{
-        margin: 40px auto;
+    .contact_us{
+        margin: auto;
         width: 90%;
         border-left: 1px #00aeef solid;
         background-color: #F2F2F2;
+        padding: 20px;
     }
    
     .contact_us .location{
@@ -118,8 +119,8 @@
 }
 
 @media screen and (min-width:1200px) {
-    .contact_wrapper{
-        margin: 40px auto;
+    .contact_us{
+        margin:auto;
         width: 80%;
     }
 }
