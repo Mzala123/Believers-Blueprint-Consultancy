@@ -253,7 +253,9 @@ main >div:nth-child(1){
     gap: 20px;
     border-bottom: #00aeef 1px solid;
     position: relative;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    overflow-y: scroll;
+    scrollbar-color: #0770b9;
 }
 
 .tab_box .tab_btn{
